@@ -1,0 +1,24 @@
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+
+a:hover {
+    text-decoration: underline;
+    color: red !important;
+    border: 1px solid black;
+}
+
+#green:hover {
+    border: 5px solid green !important;
+}

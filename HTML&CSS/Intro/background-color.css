@@ -1,0 +1,12 @@
+.container {
+    background-color: yellow !important;
+    text-align: center;
+}
+
+#green {
+    background-color: green !important;
+}
+
+section {
+    background-color: orangered !important;
+}

@@ -1,0 +1,8 @@
+h1 {
+    font-style: italic;
+    font-weight: 900;
+}
+p {
+    font-style: oblique !important;
+    font-weight: 100;
+}

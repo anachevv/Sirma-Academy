@@ -1,0 +1,11 @@
+h1:first-child {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+p:last-child {
+    text-align: right;
+}
