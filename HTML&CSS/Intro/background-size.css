@@ -1,0 +1,18 @@
+body {
+    background-image: url('https://images.squarespace-cdn.com/content/v1/5e69f43c35a41229d9688ab0/1674106514826-TFRO5IYF409QZ2N8HLL0/Alfa+Romeo+GT+(6).jpg?format=1500w');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+h1 {
+    font-size: 100px;
+    font-family: Georgia;
+    text-align: center;
+    color: white;
+}
+
+img {
+    display: block;
+    margin: auto;
+    margin-bottom: 50px;
+}

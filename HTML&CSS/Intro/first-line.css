@@ -1,0 +1,9 @@
+p::first-line {
+    font-weight: bold;
+    color: red;
+}
+
+p:nth-child(2)::first-line {
+    color: green;
+    text-decoration: underline;
+}
