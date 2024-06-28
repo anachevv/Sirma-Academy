@@ -1,0 +1,11 @@
+p {
+    color: red;
+}
+
+.highlight {
+    color: green;
+}
+
+#highlight {
+    color: gray;
+}

@@ -1,0 +1,15 @@
+input[type="text"] {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+input[type="submit"] {
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+a[href="https://example.com"] {
+    color: green;
+}
+
+a[href="https://another.com"] {
+    color: orange;
+}
