@@ -1,0 +1,9 @@
+div > p {
+    color: red;
+}
+
+.parent > p {
+    color: orange;
+    font-weight: bold;
+    font-size: 30px;
+}
