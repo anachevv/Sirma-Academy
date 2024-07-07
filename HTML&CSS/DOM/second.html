@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset=utf-8 />
+  <title>Return first and last name from a form</title>
+</head>
+<body>
+
+    <script>
+        function getFormvalue() {
+            var firstName = document.forms["form1"]["fname"].value;
+            var lastName = document.forms["form1"]["lname"].value;
+            
+            if (firstName == "" || lastName == "") {
+                alert("First name and last name must be filled out");
+                return false;
+            }
+            
+            alert(firstName +  ' ' + lastName);
+        }
+    </script>
+
+  <form id="form1" onsubmit="getFormvalue()">
+    First name: <input type="text" name="fname" value="David"><br>
+    Last name: <input type="text" name="lname" value="Beckham"><br>
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
