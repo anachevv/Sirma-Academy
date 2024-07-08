@@ -20,17 +20,31 @@
     </tr>
   </table>
   <form>
+    Row: <input type="number" id="row" min="1" max="3" required>
+    Column: <input type="number" id="col" min="1" max="2" required>
+    New Content: <input type="text" id="content" required>
     <input type="button" onclick="changeContent()" value="Change content">
-  </form>
-
-  <script>
+    </form>
+    
+    <script>
     function changeContent() {
-        var table = document.getElementById("myTable");
-        var rows = table.rows;
-        var cell = rows.item(0);
-        cell.innerHTML = "Cell content changed!";
+        // Get the row, column, and new content from the input fields
+        var row = document.getElementById('row').value;
+        var col = document.getElementById('col').value;
+        var content = document.getElementById('content').value;
+    
+        // Get the table
+        var table = document.getElementById('myTable');
+    
+        // Validate the row and column values
+        if (row > 0 && row <= table.rows.length && col > 0 && col <= table.rows[0].cells.length) {
+            // Update the cell content
+            table.rows[row - 1].cells[col - 1].innerHTML = content;
+        } else {
+            alert("Invalid row or column number.");
+        }
     }
-  </script>
+    </script>
 
 </body>
 </html>
