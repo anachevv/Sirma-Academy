@@ -28,17 +28,13 @@
     
     <script>
     function changeContent() {
-        // Get the row, column, and new content from the input fields
         var row = document.getElementById('row').value;
         var col = document.getElementById('col').value;
         var content = document.getElementById('content').value;
     
-        // Get the table
         var table = document.getElementById('myTable');
     
-        // Validate the row and column values
         if (row > 0 && row <= table.rows.length && col > 0 && col <= table.rows[0].cells.length) {
-            // Update the cell content
             table.rows[row - 1].cells[col - 1].innerHTML = content;
         } else {
             alert("Invalid row or column number.");
