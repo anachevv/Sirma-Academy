@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Manipulation</title>
+</head>
+<body>
+    <div id="list-app">
+        <p>Click on the item to change the text, or click on the button to create a new item.</p>
+        <ul id="items">
+            <!-- <li contenteditable="true">Alfa Romeo GT</li>
+            <li contenteditable="true">Audi TT</li>
+            <li contenteditable="true">Audi A4</li> -->
+        </ul>
+        <input type="text" id="newItem" value="">
+        <button type="button" id="createButton">Create New</button>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const itemsList = document.getElementById('items');
+            const newItem = document.getElementById('newItem');
+            const createButton = document.getElementById('createButton');
+            
+            function loadItems() {
+                const items = JSON.parse(localStorage.getItem('items')) || [];
+                itemsList.innerHTML = '';
+                items.forEach(itemText => {
+                    const li = document.createElement('li');
+                    li.textContent = itemText;
+                    li.contentEditable = "true";
+                    li.addEventListener('input', saveItems);
+                    itemsList.appendChild(li);
+                });
+            }
+
+            function saveItems() {
+                const items = [];
+                itemsList.querySelectorAll('li').forEach(li => {
+                    items.push(li.textContent);
+                });
+                localStorage.setItem('items', JSON.stringify(items));
+            }
+
+            createButton.addEventListener('click', () => {
+                const newItemText = newItem.value.trim();
+                if (newItemText !== '') {
+                    const li = document.createElement('li');
+                    li.textContent = newItemText;
+                    li.contentEditable = "true";
+                    li.addEventListener('input', saveItems);
+                    itemsList.appendChild(li);
+                    newItem.value = '';
+                    saveItems();
+                }
+            });
+
+            loadItems();
+        });
+    </script>
+
+</body>
+</html>
