@@ -21,9 +21,6 @@ export default function Nav() {
                         <li><a href="#teams">Teams</a></li>
                         <li><a href="#news">News</a></li>
                         <li><a href="#tickets">Tickets</a></li>
-                        <li><a href="#event-guide">Event guide</a></li>
-                        <li><a href="#history">History</a></li>
-                        <li><a href="#more">More</a></li>
                     </ul>
                 </div>
 
