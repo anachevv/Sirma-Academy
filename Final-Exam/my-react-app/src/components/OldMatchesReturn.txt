@@ -1,0 +1,51 @@
+return (
+        <>
+            <section className="matches">
+                <div className="heading">
+                    <h2>Matches</h2>
+                </div>
+
+                <div className="rounds">
+                    {matches.length > 0 ? (
+                        matches.map((match) => (
+                            <div className="match-card" key={match.ID}>
+                                <div className="team" onClick={() => toggleExpand(match.ID)}>
+                                    <div>
+                                        <h2>{teams[match.ATeamID] || match.ATeamID}</h2>
+                                    </div>
+                                    <div>
+                                        <img src={`/matches/flags/${match.ATeamID}.png`} alt={`team-${match.ATeamID}`} />
+                                    </div>
+                                </div>
+
+                                <div className="result">
+                                    <div>
+                                        <h2>{match.Score}</h2>
+                                    </div>
+                                </div>
+
+                                <div className="team" onClick={() => toggleExpand(match.ID)}>
+                                    <div>
+                                        <img src={`/matches/flags/${match.BTeamID}.png`} alt={`team-${match.BTeamID}`} />
+                                    </div>
+                                    <div>
+                                        <h2>{teams[match.BTeamID] || match.BTeamID}</h2>
+                                    </div>
+                                </div>
+
+                                {/* Collapsible content */}
+                                {expandedMatch === match.ID && (
+                                    <div className="extra-info">
+    <img src="/matches/pitch-bg.svg" />
+                                        {/* <p>Date: {match.Date}</p> */}
+                                        {/* Add more details here if needed */}
+                                    </div>
+                                )}
+                            </div>
+                        ))
+                    ) : (
+                        <p>0 matches found</p>
+                    )}
+                </div>
+            </section>
+        </>
