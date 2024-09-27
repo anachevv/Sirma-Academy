@@ -1,10 +1,12 @@
+import { redirectToHomepage } from "../utils/redirectToHomepage";
+
 export default function Footer() {
     return (
         <>
             <footer>
                 <div className="footer-container">
                     <div id="footer-logo">
-                        <img src="./footer-section/logo.png" alt="uefa logo" />
+                        <img draggable="false" onClick={redirectToHomepage} src="./footer-section/logo.png" alt="uefa logo" />
                     </div>
 
                     <div className="webpages">

@@ -1,8 +1,6 @@
-export default function Nav() {
-    const redirectToHomepage = () => {
-        window.location.href = "../../index.html";
-    };
+import { redirectToHomepage } from "../utils/redirectToHomepage";
 
+export default function Nav() {
     return (
         <>
             <nav>
