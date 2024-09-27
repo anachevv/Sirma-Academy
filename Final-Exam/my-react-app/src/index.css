@@ -19,17 +19,28 @@ header {
 }
 
 #header-logo {
+    align-items: center;
     width: 26%;
     padding: 10px;
 }
 
-#header-logo img {
+#login-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 50px;
+}
+
+#login-container div img {
+    padding-left: 10px;
     cursor: pointer;
 }
 
-#login span {
+#login-container span a {
+    text-decoration: none;
     font-family: "Uefa Euro Medium Narrow", Helvetica, Arial, sans-serif;
     color: white;
+    cursor: pointer;
 }
 
 

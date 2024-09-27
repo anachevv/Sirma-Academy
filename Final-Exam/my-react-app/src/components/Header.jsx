@@ -7,9 +7,14 @@ export default function Header() {
                     <img id="more-arrow" draggable="false" src="./header-section/more-arrow.jpg" alt="more" />
                 </div>
 
-                <div id="login">
-                    <span>Login</span>
-                    <img src="./header-section/login-logo.png"></img>
+                <div id="login-container">
+                    <div>
+                        <span><a href="#">Login</a></span>
+                    </div>
+
+                    <div>
+                        <img src="./header-section/login-logo.png"></img>
+                    </div>
                 </div>
             </header>
         </>
