@@ -140,7 +140,7 @@ export default function Hero() {
               </div>
 
               <div className="headline-content">
-                <span>EURO's economic impact</span>
+                <span><a href="#">EURO's economic impact</a></span>
               </div>
             </div>
 
@@ -150,7 +150,7 @@ export default function Hero() {
               </div>
 
               <div className="headline-content">
-                <span>Buffon receives President's Award</span>
+                <span><a href="#">Buffon receives President's Award</a></span>
               </div>
             </div>
 
@@ -160,7 +160,7 @@ export default function Hero() {
               </div>
 
               <div className="headline-content">
-                <span>EURO 2028: Lowdown</span>
+                <span><a href="#">EURO 2028: Lowdown</a></span>
               </div>
             </div>
 
@@ -170,7 +170,7 @@ export default function Hero() {
               </div>
 
               <div className="headline-content">
-                <span>EURO 2024 technical report: Download part one!</span>
+                <span><a href="#">EURO 2024 technical report: Download part one!</a></span>
               </div>
             </div>
 
@@ -180,7 +180,7 @@ export default function Hero() {
               </div>
 
               <div className="headline-content">
-                <span>Ten memorable EURO matches</span>
+                <span><a href="#">Ten memorable EURO matches</a></span>
               </div>
             </div>
           </div>

@@ -263,6 +263,11 @@ nav a:hover {
     padding-top: 10px;
 }
 
+.headline-content span a {
+    font-family: "Uefa Euro Book", Helvetica, Arial, sans-serif;
+    color: white;
+    text-decoration: none;
+}
 
 /* Matches */
 
